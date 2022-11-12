@@ -8,7 +8,18 @@ import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillInstagram,
+  AiFillHtml5,
 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
+import {
+  IoLogoJavascript,
+  IoLogoReact,
+  IoLogoWordpress,
+  IoLogoFirebase,
+} from "react-icons/io5";
+import { FaPhp, FaGitAlt } from "react-icons/fa";
+import { DiResponsive } from "react-icons/di";
+import { SiAdobexd } from "react-icons/si";
 
 // import images
 import jclogo from "../public/img/my-logo.png";
@@ -57,11 +68,11 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="grid md:grid-cols-2 gap-4 mx-auto md:container items-center mb-4">
+          <div className="grid md:grid-cols-2 gap-4 mx-auto md:container items-center mb-12">
             <div className="md:flex justify-center">
               <Image
                 src={junnel}
-                className="rounded-full mb-4 md:w-96"
+                className="rounded-full mb-4 w-96 mx-auto"
                 alt="Junnel Crucillo Picture"
               />
             </div>
@@ -69,7 +80,9 @@ export default function Home() {
               <h2 className="text-4xl py-2 text-teal-600 font-bold">
                 Junnel Crucillo
               </h2>
-              <h3 className="text-2xl py-2 font-medium">Web Developer</h3>
+              <h3 className="text-2xl py-2 font-medium uppercase">
+                Web Developer
+              </h3>
               <p className="mb-4 text-sm leading-8 text-gray-800">
                 Hi there! I am a Digital Media and IT (Information Technology)
                 specialized in Web Design and Development who is passionate
@@ -92,16 +105,64 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="www.github.com/">
+                  <Link href="https://github.com/">
                     <AiFillGithub className="text-7xl transition-all hover:fill-teal-500" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="www.instagram.com/">
+                  <Link href="https://instagram.com/">
                     <AiFillInstagram className="text-7xl transition-all hover:fill-teal-500" />
                   </Link>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div className="md:container mx-auto">
+            <h2 className="uppercase font-bold text-4xl text-teal-600 text-center underline">
+              Skills
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center py-8">
+              <div className="flex items-center flex-col">
+                <AiFillHtml5 className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">HTML5</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <DiCss3 className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">CSS3</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <IoLogoJavascript className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">JavaScript</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <FaGitAlt className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">Git</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <IoLogoReact className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">React</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <IoLogoWordpress className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">WordPress</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <IoLogoFirebase className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">Firebase</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <FaPhp className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">PHP</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <SiAdobexd className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">Adobe XD</p>
+              </div>
+              <div className="flex items-center flex-col">
+                <DiResponsive className="text-8xl transition-all hover:fill-teal-500" />
+                <p className="text-sm font-bold">Responsive Design</p>
+              </div>
             </div>
           </div>
         </section>
