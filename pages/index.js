@@ -188,7 +188,7 @@ export default function Home() {
                   </div>
                   <div
                     className="aos-init aos-animate"
-                    data-aos="fade-right"
+                    data-aos="zoom-in-down"
                     data-aos-duration="600"
                   >
                     <h3 className="text-3xl font-bold my-4">
@@ -237,7 +237,7 @@ export default function Home() {
                   </div>
                   <div
                     className="aos-init aos-animate"
-                    data-aos="fade-left"
+                    data-aos="zoom-in-down"
                     data-aos-duration="600"
                   >
                     <h3 className="text-3xl font-bold my-4">React Dashboard</h3>
@@ -288,7 +288,7 @@ export default function Home() {
                   </div>
                   <div
                     className="aos-init aos-animate"
-                    data-aos="fade-right"
+                    data-aos="zoom-in-down"
                     data-aos-duration="600"
                   >
                     <h3 className="text-3xl font-bold my-4">
