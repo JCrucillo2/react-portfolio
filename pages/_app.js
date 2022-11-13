@@ -17,7 +17,13 @@ function MyApp({ Component, pageProps }) {
       debounceDelay: 50,
       throttleDelay: 99,
 
-      duration: 1500,
+      offset: 120,
+      delay: 0,
+      duration: 400,
+      easing: "ease",
+      once: false,
+      mirror: false,
+      anchorPlacement: "top-bottom",
     });
   }, []);
 

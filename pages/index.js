@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // react-icons
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillGithub,
@@ -27,6 +26,7 @@ import junnel from "../public/img/my-picture.webp";
 import BsProject from "../public/img/bootstrap-page.webp";
 import NextJStripe from "../public/img/next-js-stripe-intg.webp";
 import ReactDashboard from "../public/img/react-dashboard.webp";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
@@ -42,34 +42,24 @@ export default function Home() {
 
       <main className="bg-white">
         <section className="min-h-screen">
-          <nav className="flex items-center justify-between py-8 md:container mx-auto px-4">
-            <h1>
-              <Link href="/" className="flex items-center">
-                <Image
-                  src={jclogo}
-                  className="w-8 relative"
-                  alt="My Personal Logo"
-                />
-                <span className="hidden md:inline-block md:ml-4 font-bold">
-                  Junnel Crucillo
-                </span>
-              </Link>
-            </h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-              </li>
-              <li>
-                <Link
-                  className="bg-gradient-to-r from-teal-500 to-purple-400 text-white px-4 py-2 rounded-md ml-4"
-                  href="/files/my-resume.pdf"
-                  target="_blank"
-                >
-                  Resume
+          <div className=" mb-8 px-4 py-5 md:py-0 sticky top-0 z-50 bg-white">
+            <div className="md:container mx-auto flex justify-between items-center">
+              <h1>
+                <Link href="/" className="flex items-center">
+                  <Image
+                    src={jclogo}
+                    className="w-8 relative"
+                    alt="My Personal Logo"
+                  />
+                  <span className="hidden md:inline-block md:ml-4 font-bold">
+                    Junnel Crucillo
+                  </span>
                 </Link>
-              </li>
-            </ul>
-          </nav>
+              </h1>
+
+              <NavBar />
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-4 mx-auto md:container items-center mb-12 px-4">
             <div className="md:flex justify-center">
@@ -127,7 +117,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:container mx-auto px-4">
+          <div className="md:container mx-auto px-4" id="skills">
             <h2 className="uppercase font-bold text-4xl text-teal-600 text-center underline">
               Skills
             </h2>
@@ -175,7 +165,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-teal-600 to-purple-400">
+          <div
+            className="bg-gradient-to-r from-teal-600 to-purple-400"
+            id="projects"
+          >
             <div className="md:container mx-auto px-4 text-white">
               <h2 className="uppercase font-bold text-4xl pt-9 text-center underline">
                 Projects
@@ -337,8 +330,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="py-8 mx-auto md:container px-4">
-            <h2 className="uppercase font-bold text-4xl text-center text-teal-600 py-4">
+          <div className="py-8 mx-auto md:container px-4" id="contact">
+            <h2 className="uppercase font-bold text-4xl text-center text-teal-600 py-4 underline">
               Contact Me
             </h2>
             <div className="grid md:grid-cols-2 md:gap-4 md:items-center">
