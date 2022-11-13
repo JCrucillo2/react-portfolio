@@ -103,17 +103,23 @@ export default function Home() {
               </p>
               <ul className="grid grid-cols-3 justify-items-center">
                 <li>
-                  <Link href="https://twitter.com/">
+                  <Link
+                    href="https://twitter.com/JunnelC_WebDev"
+                    target="_blank"
+                  >
                     <AiFillTwitterCircle className="text-7xl transition-all hover:fill-teal-500" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/JCrucillo2">
+                  <Link href="https://github.com/JCrucillo2" target="_blank">
                     <AiFillGithub className="text-7xl transition-all hover:fill-teal-500" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://instagram.com/">
+                  <Link
+                    href="https://www.instagram.com/junnelc_webdev/"
+                    target="_blank"
+                  >
                     <AiFillInstagram className="text-7xl transition-all hover:fill-teal-500" />
                   </Link>
                 </li>
@@ -176,14 +182,22 @@ export default function Home() {
               </h2>
               <div className="py-9">
                 <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
-                  <div>
+                  <div
+                    className="aos-init aos-animate"
+                    data-aos="flip-left"
+                    data-aos-duration="600"
+                  >
                     <Image
                       src={BsProject}
                       alt="Bootstrap project"
                       className="w-fit rounded-md"
                     />
                   </div>
-                  <div>
+                  <div
+                    className="aos-init aos-animate"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                  >
                     <h3 className="text-3xl font-bold my-4">
                       Bootstrap Project
                     </h3>
@@ -217,14 +231,22 @@ export default function Home() {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
-                  <div className="lg:order-last">
+                  <div
+                    className="lg:order-last aos-init aos-animate"
+                    data-aos="flip-right"
+                    data-aos-duration="600"
+                  >
                     <Image
                       src={ReactDashboard}
                       alt="React Dashboard Project"
                       className="w-fit rounded-md"
                     />
                   </div>
-                  <div>
+                  <div
+                    className="aos-init aos-animate"
+                    data-aos="fade-left"
+                    data-aos-duration="600"
+                  >
                     <h3 className="text-3xl font-bold my-4">React Dashboard</h3>
                     <p className=" text-gray-800">
                       React dashboard is my very first project I did with React
@@ -260,14 +282,22 @@ export default function Home() {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  <div>
+                  <div
+                    className="aos-init aos-animate"
+                    data-aos="flip-left"
+                    data-aos-duration="600"
+                  >
                     <Image
                       src={NextJStripe}
                       alt="NextJS Project with Stripe"
                       className="w-fit rounded-md"
                     />
                   </div>
-                  <div>
+                  <div
+                    className="aos-init aos-animate"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                  >
                     <h3 className="text-3xl font-bold my-4">
                       NextJS w/ StripeJS Integration
                     </h3>
@@ -325,7 +355,7 @@ export default function Home() {
                   Email me at:
                   <Link
                     href="mailto:junnelcrucillo729@outlook.com"
-                    className="font-bold inline-block w-full"
+                    className="font-bold inline-block w-full text-teal-600"
                   >
                     junnelcrucillo729@outlook.com
                   </Link>
