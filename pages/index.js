@@ -350,7 +350,11 @@ export default function Home() {
                       required
                     />
                   </div>
-                  <input type="hidden" name="_next" value="/form/thank-you" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://junnel-portfolio.vercel.app/form/thank-you"
+                  />
                   <div className="mb-4">
                     <label htmlFor="email" className="block mb-2.5 font-bold">
                       Email:
