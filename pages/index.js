@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-teal-500">
+          <div className="bg-gradient-to-r from-teal-600 to-purple-400">
             <div className="md:container mx-auto px-4 text-white">
               <h2 className="uppercase font-bold text-4xl pt-9 text-center underline">
                 Projects
@@ -303,6 +303,85 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-8 mx-auto md:container px-4">
+            <h2 className="uppercase font-bold text-4xl text-center text-teal-600 py-4">
+              Contact Me
+            </h2>
+            <div className="grid md:grid-cols-2 md:gap-4 md:items-center">
+              <div className="text-center">
+                <p className="mb-4 text-gray-600">
+                  If you have any questions about me or any of my projects,
+                  please don't hesitate to message me!
+                </p>
+                <p className="mb-4 text-gray-600">
+                  I am always open to talk more about my current experience and
+                  I am willing to learn so much more!
+                </p>
+                <p className="mb-4 text-gray-600">
+                  Email me at:
+                  <Link
+                    href="mailto:junnelcrucillo729@outlook.com"
+                    className="font-bold inline-block w-full"
+                  >
+                    junnelcrucillo729@outlook.com
+                  </Link>
+                </p>
+              </div>
+              <div>
+                <form
+                  action="https://formsubmit.co/junnelcrucillo729@outlook.com"
+                  method="POST"
+                  className=""
+                >
+                  <input type="hidden" name="_subject" value="New Email!" />
+                  <div className="mb-4">
+                    <label htmlFor="name" className="block mb-2.5 font-bold">
+                      Name:
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-input rounded-md w-full"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <input type="hidden" name="_next" value="/form/thank-you" />
+                  <div className="mb-4">
+                    <label htmlFor="email" className="block mb-2.5 font-bold">
+                      Email:
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-input rounded-md w-full"
+                      placeholder="johndoe@xyz.com"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="message" className="block mb-2.5 font-bold">
+                      Message:
+                    </label>
+                    <textarea
+                      type="text"
+                      name="message"
+                      className="form-textarea w-full rounded-md"
+                      placeholder="Your message here!"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="text-center bg-teal-600 text-white px-4 py-3 rounded-md transition-all hover:bg-black uppercase font-bold w-full"
+                  >
+                    Send
+                  </button>
+                </form>
               </div>
             </div>
           </div>
