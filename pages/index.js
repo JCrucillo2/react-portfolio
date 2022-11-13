@@ -333,7 +333,7 @@ export default function Home() {
               </div>
               <div>
                 <form
-                  action="https://formsubmit.co/junnelcrucillo729@outlook.com"
+                  action="https://formsubmit.co/2f5263555334d0701a11bb333a3faea9"
                   method="POST"
                   className=""
                 >
