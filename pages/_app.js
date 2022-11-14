@@ -8,7 +8,24 @@ import "aos/dist/aos.css";
 // Google Analytics
 import Script from "next/script";
 
+// router
+import { useRouter } from "next/router";
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   useEffect(() => {
     Aos.init({
       disable: false,
