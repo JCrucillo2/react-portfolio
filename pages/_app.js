@@ -8,24 +8,7 @@ import "aos/dist/aos.css";
 // Google Analytics
 import Script from "next/script";
 
-// router
-import { useRouter } from "next/router";
-
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
   useEffect(() => {
     Aos.init({
       disable: false,
@@ -50,23 +33,19 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
+        async
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-0SZJGN7BX4"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-0SZJGN7BX4`}
       />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0SZJGN7BX4', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+      <Script strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-0SZJGN7BX4');
+        `}
+      </Script>
 
       <Component {...pageProps} />
     </>
