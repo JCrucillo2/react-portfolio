@@ -28,6 +28,8 @@ import NextJStripe from "../public/img/next-js-stripe-intg.webp";
 import ReactDashboard from "../public/img/react-dashboard.webp";
 import NavBar from "../components/NavBar";
 
+import TypewriterComponent from "typewriter-effect";
+
 export default function Home() {
   return (
     <div className="font-poppins">
@@ -71,7 +73,19 @@ export default function Home() {
             </div>
             <div className="text-center">
               <h2 className="text-4xl py-2 text-teal-600 font-bold">
-                Junnel Crucillo
+                <TypewriterComponent
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("Junnel Crucillo")
+                      .pauseFor(2500)
+                      .deleteAll()
+                      .start();
+                  }}
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </h2>
               <h3 className="text-2xl py-2 font-medium uppercase">
                 Web Developer
