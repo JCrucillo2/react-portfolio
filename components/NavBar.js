@@ -61,7 +61,7 @@ export default function NavBar() {
           />
           <span
             className={`h-1 w-full bg-black rounded-md group-hover:text-teal-600 cursor pointer transform transition duration-300 ease-in-out ${
-              open ? "w-0" : "w-full"
+              open ? "opacity-0" : "w-full"
             }`}
           />
           <span

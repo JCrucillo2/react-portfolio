@@ -177,7 +177,7 @@ export default function Home() {
                 <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
                   <div
                     className="aos-init aos-animate"
-                    data-aos="flip-left"
+                    data-aos="zoom-in-left"
                     data-aos-duration="600"
                   >
                     <Image
@@ -226,7 +226,7 @@ export default function Home() {
                 <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
                   <div
                     className="lg:order-last aos-init aos-animate"
-                    data-aos="flip-right"
+                    data-aos="zoom-in-right"
                     data-aos-duration="600"
                   >
                     <Image
@@ -277,7 +277,7 @@ export default function Home() {
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div
                     className="aos-init aos-animate"
-                    data-aos="flip-left"
+                    data-aos="zoom-in-left"
                     data-aos-duration="600"
                   >
                     <Image
